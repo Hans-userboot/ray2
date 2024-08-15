@@ -18,8 +18,8 @@ MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://ray1:ray2@cluster0.nycdm.
 
 RESTRICT = strtobool(os.environ.get("RESTRICT", "True"))
 
-FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "-1001910996252"))
-FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "0"))
+FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "-1001758896780"))
+FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "-1001334895522"))
 FORCE_SUB_3 = int(os.environ.get("FORCE_SUB_3", "0"))
 FORCE_SUB_4 = int(os.environ.get("FORCE_SUB_4", "0"))
 
@@ -41,7 +41,7 @@ FORCE_MESSAGE = os.environ.get(
 )
 
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5178772086 5575087342 6039932222").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5178772086 5575087342 6039932222 7150384119").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
     
